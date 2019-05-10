@@ -14,7 +14,8 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh '//To run report server if need'
+        sh '''//To run report server if need
+def  appName = \'WebReport\''''
       }
     }
   }
