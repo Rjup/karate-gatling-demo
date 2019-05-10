@@ -12,5 +12,10 @@ pipeline {
 '''
       }
     }
+    stage('') {
+      steps {
+        sh 'cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/report'
+      }
+    }
   }
 }
