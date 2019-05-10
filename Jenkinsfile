@@ -14,7 +14,7 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh 'sudo cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/report'
+        sh '//To run report server if need'
       }
     }
   }
