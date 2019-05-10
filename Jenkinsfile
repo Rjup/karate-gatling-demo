@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Report') {
       steps {
-        sh '''cat /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/catskaratesimulation-20190510024124746/index.html
+        sh '''tree /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/
 '''
       }
     }
