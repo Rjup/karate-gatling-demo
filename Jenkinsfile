@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Test step') {
       steps {
         sh 'mvn clean test-compile gatling:test'
       }
