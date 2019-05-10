@@ -8,7 +8,10 @@ pipeline {
     }
     stage('Report') {
       steps {
-        sh 'sudo cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/6mReport'
+        sh '''cd
+sudo mkdir /home/centos/6mReport
+sudo chmod -R ugo+rwx /home/centos/6mReport
+sudo cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/6mReport'''
       }
     }
   }
