@@ -12,9 +12,9 @@ pipeline {
 '''
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        sh 'cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/report'
+        sh 'sudo cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/report'
       }
     }
   }
