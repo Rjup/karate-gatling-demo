@@ -6,5 +6,10 @@ pipeline {
         sh 'mvn clean test-compile gatling:test'
       }
     }
+    stage('Report') {
+      steps {
+        sh 'cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/6mReport'
+      }
+    }
   }
 }
