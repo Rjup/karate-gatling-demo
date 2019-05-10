@@ -8,7 +8,8 @@ pipeline {
     }
     stage('Report') {
       steps {
-        sh 'cp -R /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/ /home/centos/6mReport'
+        sh '''cat /var/lib/jenkins/workspace/Mock-gatlingReport_master/target/gatling/catskaratesimulation-20190510024124746/index.html
+'''
       }
     }
   }
