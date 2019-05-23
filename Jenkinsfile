@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Report') {
       steps {
-        sh '''cd /var/lib/jenkins/workspace/karate-gatling-demo_master/target/gatling/
+        sh '''cd /var/lib/jenkins/workspace/karate-gatling-demo_master/target/
 tree '''
       }
     }
